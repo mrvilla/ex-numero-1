@@ -1,0 +1,38 @@
+
+/* ===================================================
+VEAMS SETTINGS
+=================================================== */
+$min-width: true; // This variable will be used in veams-sass
+
+/* ===================================================
+BOURBON NEAT SETTINGS
+=================================================== */
+$neat-grid: (
+	columns: 12,
+	gutter: 2%
+);
+
+$max-width: calc(1404px + 4%) !default;
+
+/* ===================================================
+BREAKPOINT SETTINGS
+=================================================== */
+// Breakpoints
+$bp-mobile-s: 320px;
+$bp-tablet-p: 768px;
+$bp-tablet-l: 1024px;
+$bp-desktop-m: 1280px;
+$bp-desktop-l: 1440px;
+$bp-desktop-xl: 1920px;
+
+// Breakpoints Map
+$breakpoints: (
+	'mobile-s': $bp-mobile-s,
+	'tablet-p': $bp-tablet-p,
+	'tablet-l': $bp-tablet-l,
+	'desktop-m': $bp-desktop-m,
+	'desktop-l': $bp-desktop-l,
+	'desktop-xl': $bp-desktop-xl
+);
+
+

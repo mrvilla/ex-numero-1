@@ -1,0 +1,14 @@
+{
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Default"
+			},
+			"settings": {
+				"headerContextClass": "default",
+				"headerClasses": false
+			},
+			"content": {}
+		}
+	}
+}
