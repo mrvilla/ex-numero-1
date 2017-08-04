@@ -14,6 +14,7 @@ Main File For Imports
 
 // Global Variables and Settings
 @import "global/_vars";
+@import "global/mixins";
 @import "../../node_modules/veams/src/scss/veams";
 
 // Frameworks 
@@ -38,6 +39,15 @@ Main File For Imports
 
 
 @import "../templating/partials/components/header/scss/_c-header";
+
+
+@import "../templating/partials/components/logo/scss/_c-logo";
+
+
+@import "../templating/partials/components/header-nav/scss/_c-header-nav";
+
+
+@import "../templating/partials/components/mobile-icon/scss/_c-mobile-icon";
 
 // @INSERTPOINT :: @ref: scss-self-contained-import, @keep: true //
 

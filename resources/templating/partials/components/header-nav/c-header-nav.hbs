@@ -1,0 +1,21 @@
+---
+type: component
+contextData: "header-nav-bp"
+layout: "lyt-docs"
+publish: false
+---
+
+
+<div class="c-header-nav{{#if settings.headerNavContextClass}}--{{settings.headerNavContextClass}}{{else}}--default{{/if}}{{#if settings.headerNavClasses}} {{settings.headerNavClasses}}{{/if}}"
+     data-css="c-header-nav">
+    <nav class="header-nav__menu">
+        <h2 class="header-nav__menu-header-info">Navigation</h2>
+        <ul class="header-nav__menu-list">
+            {{#with @root.header-nav-bp.variations.default}}
+                {{#each content.items}}
+                    {{> c-header-nav-partials }}
+                {{/each}}
+            {{/with}}
+        </ul>
+    </nav>
+</div>

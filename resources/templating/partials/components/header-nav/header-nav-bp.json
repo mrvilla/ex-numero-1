@@ -1,0 +1,26 @@
+{
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Default"
+			},
+			"settings": {
+				"headerNavContextClass": "default",
+				"headerNavClasses": false
+			},
+			"content": {
+				"items": [
+					{
+						"title": "1link"
+					},
+					{
+						"title": "2link"
+					},
+					{
+						"title": "3link"
+					}
+				]
+			}
+		}
+	}
+}

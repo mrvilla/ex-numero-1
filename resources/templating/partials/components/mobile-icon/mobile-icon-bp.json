@@ -1,0 +1,14 @@
+{
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Default"
+			},
+			"settings": {
+				"mobileIconContextClass": "default",
+				"mobileIconClasses": false
+			},
+			"content": {}
+		}
+	}
+}

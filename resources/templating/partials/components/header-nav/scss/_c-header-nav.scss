@@ -1,0 +1,38 @@
+/* ===================================================
+component: header-nav
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-header-nav"] {
+  overflow: hidden;
+  
+  .header-nav__menu-header-info {
+    @include hidden-structure-info();
+  }
+
+  .header-nav__menu-list {
+    display: none;
+  }
+
+  @include bp($bp-tablet-l) {
+    .header-nav__menu-list {
+      display: block;
+      float: right;
+      overflow: hidden;
+    }
+
+    .header-nav__menu-list-items {
+      display: inline;
+      padding-right: 1rem;
+    }
+
+  }
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-header-nav--default {
+}

@@ -1,0 +1,23 @@
+
+## INSERTPOINTS
+
+### Include: Page
+
+``` hbs
+{{! @INSERT :: START @id: header-nav, @tag: component-partial }}
+{{#with header-nav-bp}}
+	{{> c-header-nav}}
+{{/with}}
+{{! @INSERT :: END }}
+```
+
+### Include: SCSS
+
+``` scss
+// @INSERT :: START @tag: scss-import //
+@import "components/_c-header-nav";
+// @INSERT :: END
+// @INSERT :: START @tag: scss-self-contained-import //
+@import "../templating/partials/components/header-nav/scss/_c-header-nav";
+// @INSERT :: END
+```

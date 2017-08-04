@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ===================================================
 Main File For Imports
 =================================================== */
@@ -58,6 +59,9 @@ BOURBON NEAT SETTINGS
 =================================================== */
 /* ===================================================
 BREAKPOINT SETTINGS
+=================================================== */
+/* ===================================================
+COLOR
 =================================================== */
 /* ===================================================
 CENTERING MIXIN
@@ -152,20 +156,14 @@ body {
   border: 10px solid red; }
 
 head {
-  font-family: desktop; }
+  font-family: desktop-l; }
   @media only screen and (min-width: 1024px) {
     head {
       font-family: tablet-l; } }
   @media only screen and (min-width: 768px) {
     head {
       font-family: tablet-p; } }
-  @media only screen and (min-width: 657px) {
-    head {
-      font-family: mobile-l; } }
-  @media only screen and (min-width: 480px) {
-    head {
-      font-family: mobile-p; } }
-  @media only screen and (min-width: 360px) {
+  @media only screen and (min-width: 320px) {
     head {
       font-family: mobile-s; } }
 
@@ -176,50 +174,109 @@ component: header
 Global Styles
 --------------------------------------------------- */
 [data-css="c-header"] {
-  background: #dcdcdc;
+  background-color: #F5F5F5;
   padding: 2.5rem;
   overflow: hidden; }
-  [data-css="c-header"] .logo-name {
-    width: 60%;
-    float: left; }
-  [data-css="c-header"] .menu__header-info {
+  @media only screen and (min-width: 1024px) {
+    [data-css="c-header"] {
+      background: #EEEEEE; } }
+  @media only screen and (min-width: 1440px) {
+    [data-css="c-header"] {
+      background: #E0E0E0; } }
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+/* ===================================================
+component: logo
+=================================================== */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-logo"] {
+  float: left;
+  width: 60%;
+  overflow: hidden; }
+  [data-css="c-logo"] .logo__icon {
+    display: inline; }
+    [data-css="c-logo"] .logo__icon::before {
+      content: '🌏';
+      animation: rotation 2s infinite linear;
+      display: inline-block;
+      position: relative;
+      width: 20px;
+      height: 20px; }
+  [data-css="c-logo"] .logo__name {
+    display: inline;
+    padding-left: 5px; }
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+@keyframes rotation {
+  100% {
+    transform: rotate(1turn); } }
+
+/* ===================================================
+component: header-nav
+=================================================== */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-header-nav"] {
+  overflow: hidden; }
+  [data-css="c-header-nav"] .header-nav__menu-header-info {
     display: block;
     position: absolute;
     left: -9999px;
     width: 1px;
     height: 1px;
     overflow: hidden; }
-  [data-css="c-header"] .menu__list {
+  [data-css="c-header-nav"] .header-nav__menu-list {
     display: none; }
-  [data-css="c-header"] .menu__mobile {
-    float: right;
-    position: relative;
-    font-size: 0; }
-    [data-css="c-header"] .menu__mobile::before, [data-css="c-header"] .menu__mobile::after {
-      content: '';
-      background-color: #333;
-      width: 25px;
-      height: 2px;
-      position: absolute;
-      right: 0;
-      top: 5px; }
-    [data-css="c-header"] .menu__mobile::after {
-      top: 15px; }
   @media only screen and (min-width: 1024px) {
-    [data-css="c-header"] {
-      background: #c3c3c3; }
-      [data-css="c-header"] .menu__list {
-        display: block;
-        float: right;
-        overflow: hidden; }
-      [data-css="c-header"] .menu__list__items {
-        float: left;
-        padding-right: 1rem; }
-      [data-css="c-header"] .menu__mobile {
-        display: none; } }
-  @media only screen and (min-width: 1440px) {
-    [data-css="c-header"] {
-      background: #8b8b8b; } }
+    [data-css="c-header-nav"] .header-nav__menu-list {
+      display: block;
+      float: right;
+      overflow: hidden; }
+    [data-css="c-header-nav"] .header-nav__menu-list-items {
+      display: inline;
+      padding-right: 1rem; } }
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+/* ===================================================
+component: mobile-icon
+=================================================== */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-mobile-icon"] {
+  float: right;
+  overflow: hidden;
+  padding: 0; }
+  [data-css="c-mobile-icon"] .menu__mobile {
+    background-color: transparent;
+    border: 0; }
+  [data-css="c-mobile-icon"] .menu__mobile-line {
+    display: block;
+    background-color: #000;
+    width: 25px;
+    height: 2px;
+    margin-top: 5px; }
+    [data-css="c-mobile-icon"] .menu__mobile-line:first-child {
+      margin-top: 2px; }
+  [data-css="c-mobile-icon"] .menu__mobile-info {
+    display: block;
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; }
+  @media only screen and (min-width: 1024px) {
+    [data-css="c-mobile-icon"] .menu__mobile {
+      display: none; } }
 
 /* ---------------------------------------------------
 Context: Default

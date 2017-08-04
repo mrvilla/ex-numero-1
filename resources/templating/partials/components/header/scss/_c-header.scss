@@ -6,69 +6,16 @@ component: header
 Global Styles
 --------------------------------------------------- */
 [data-css="c-header"] {
-  background: #dcdcdc;
+  background-color: $color-grey-1;
   padding: 2.5rem;
   overflow: hidden;
 
-  .logo-name {
-    width: 60%;
-    float: left;
-  }
-
-  .menu__header-info {
-    display: block;
-    position: absolute;
-    left: -9999px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-  }
-
-  .menu__list {
-    display: none;
-  }
-
-  .menu__mobile {
-    float: right;
-    position: relative;
-    font-size: 0;
-
-    &::before, &::after {
-      content: '';
-      background-color: #333;
-      width: 25px;
-      height: 2px;
-      position: absolute;
-      right: 0;
-      top: 5px;
-    }
-
-    &::after {
-      top: 15px;
-    }
-  }
-
   @include bp($bp-tablet-l) {
-    background: #c3c3c3;
-
-    .menu__list {
-      display: block;
-      float: right;
-      overflow: hidden;
-    }
-
-    .menu__list__items {
-      float: left;
-      padding-right: 1rem;
-    }
-
-    .menu__mobile {
-      display: none;
-    }
+    background: $color-grey-2;
   }
 
   @include bp($bp-desktop-l) {
-    background: #8b8b8b;
+    background: $color-grey-3;
   }
 }
 
@@ -76,5 +23,4 @@ Global Styles
 Context: Default
 --------------------------------------------------- */
 .c-header--default {
-
 }

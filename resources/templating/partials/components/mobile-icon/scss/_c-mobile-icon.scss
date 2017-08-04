@@ -1,0 +1,45 @@
+/* ===================================================
+component: mobile-icon
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-mobile-icon"] {
+  float: right;
+  overflow: hidden;
+  padding: 0;
+
+  .menu__mobile {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .menu__mobile-line {
+    display: block;
+    background-color: $color-black;
+    width: 25px;
+    height: 2px;
+    margin-top: 5px;
+
+    &:first-child {
+      margin-top: 2px;
+    }
+  }
+
+  .menu__mobile-info {
+    @include hidden-structure-info();
+  }
+
+  @include bp($bp-tablet-l) {
+    .menu__mobile {
+      display: none;
+    }
+  }
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-mobile-icon--default {
+}
