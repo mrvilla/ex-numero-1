@@ -7,13 +7,32 @@ Global Styles
 --------------------------------------------------- */
 [data-css="c-header-nav"] {
   overflow: hidden;
-  
+
   .header-nav__menu-header-info {
     @include hidden-structure-info();
   }
 
   .header-nav__menu-list {
     display: none;
+  }
+
+  .header-nav__menu-list--mobile-menu {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 75px;
+    bottom: 0;
+    text-align: center;
+    background-color: $color-grey-1;
+  }
+
+  .header-nav__menu-list-item {
+    padding: 1rem 0;
+  }
+
+  .header-nav__menu-list-item-a {
+    text-decoration: none;
   }
 
   @include bp($bp-tablet-l) {
@@ -23,7 +42,7 @@ Global Styles
       overflow: hidden;
     }
 
-    .header-nav__menu-list-items {
+    .header-nav__menu-list-item {
       display: inline;
       padding-right: 1rem;
     }

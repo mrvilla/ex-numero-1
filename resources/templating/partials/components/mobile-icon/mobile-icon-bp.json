@@ -8,7 +8,11 @@
 				"mobileIconContextClass": "default",
 				"mobileIconClasses": false
 			},
-			"content": {}
+			"content": {
+				"info": {
+					"text": "Menu"
+				}
+			}
 		}
 	}
 }

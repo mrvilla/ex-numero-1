@@ -8,7 +8,13 @@ publish: false
 
 <div class="c-header{{#if settings.headerContextClass}}--{{settings.headerContextClass}}{{else}}--default{{/if}}{{#if settings.headerClasses}} {{settings.headerClasses}}{{/if}}"
      data-css="c-header">
-    {{>c-logo}}
-    {{>c-header-nav}}
-    {{>c-mobile-icon}}
+    {{#with @root.logo-bp.variations.default}}
+        {{>c-logo}}
+    {{/with}}
+    {{#with @root.mobile-icon-bp.variations.default}}
+        {{>c-mobile-icon}}
+    {{/with}}
+    {{#with @root.header-nav-bp.variations.default}}
+        {{>c-header-nav}}
+    {{/with}}
 </div>

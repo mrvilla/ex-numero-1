@@ -42,6 +42,23 @@ Veams.onInitialize(() => {
 
 	// Media Query Handler Plugin
 	Veams.use(VeamsMediaQueryHandler);
+
+    const mobileButtonSel = "[data-js-item='mobile-button']"; // this is a string to select
+    const $mobileButton = $(mobileButtonSel); // this is a Jquery element, hence the $ at the beginning
+
+    $mobileButton.on("click", (e, target) => {
+    	const $target = $(target); // cache element that youll need later
+		const openClass = "is-open";
+
+		if ($target.hasClass(openClass)) {
+            $target.removeClass(openClass);
+            $("#header-nav__menu-list").removeClass("header-nav__menu-list--mobile-menu");
+		} else {
+            $target.addClass(openClass);
+            $("#header-nav__menu-list").addClass("header-nav__menu-list--mobile-menu");
+		}
+    });
+
 });
 
 export {App, Veams};

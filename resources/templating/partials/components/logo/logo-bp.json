@@ -8,7 +8,11 @@
 				"logoContextClass": "default",
 				"logoClasses": false
 			},
-			"content": {}
+			"content": {
+				"logo": {
+					"name": "Logo name"
+				}
+			}
 		}
 	}
 }

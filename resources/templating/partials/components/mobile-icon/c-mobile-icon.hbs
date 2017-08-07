@@ -8,11 +8,11 @@ publish: false
 
 <div class="c-mobile-icon{{#if settings.mobileIconContextClass}}--{{settings.mobileIconContextClass}}{{else}}--default{{/if}}{{#if settings.mobileIconClasses}} {{settings.mobileIconClasses}}{{/if}}"
      data-css="c-mobile-icon">
-    <button class="menu__mobile">
-        <span class="menu__mobile-line"></span>
-        <span class="menu__mobile-line"></span>
-        <span class="menu__mobile-line"></span>
-        <span class="menu__mobile-info">Menu</span>
+    <button class="mobile-icon__button" id="mobile-icon__button" data-js-item="mobile-button">
+        <span class="mobile-icon__button-line"></span>
+        <span class="mobile-icon__button-line"></span>
+        <span class="mobile-icon__button-line"></span>
+        <span class="mobile-icon__button-info">{{content.info.text}}</span>
     </button>
      
 </div>

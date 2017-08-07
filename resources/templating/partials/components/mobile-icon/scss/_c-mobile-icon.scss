@@ -10,12 +10,22 @@ Global Styles
   overflow: hidden;
   padding: 0;
 
-  .menu__mobile {
+  .mobile-icon__button {
     background-color: transparent;
     border: 0;
+
+    &:hover, &:focus {
+      background-color: transparent;
+      outline: none;
+      -webkit-box-shadow: $color-white;
+      -moz-box-shadow: $color-white;
+      border-color: $color-white;
+    }
+
+
   }
 
-  .menu__mobile-line {
+  .mobile-icon__button-line {
     display: block;
     background-color: $color-black;
     width: 25px;
@@ -27,12 +37,12 @@ Global Styles
     }
   }
 
-  .menu__mobile-info {
+  .mobile-icon__button-info {
     @include hidden-structure-info();
   }
 
   @include bp($bp-tablet-l) {
-    .menu__mobile {
+    .mobile-icon__button {
       display: none;
     }
   }
