@@ -14,25 +14,30 @@ Global Styles
 
   .header-nav__menu-list {
     display: none;
-  }
 
-  .header-nav__menu-list--mobile-menu {
-    display: block;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 75px;
-    bottom: 0;
-    text-align: center;
-    background-color: $color-grey-1;
+    &.is-open {
+      display: block;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 75px;
+      bottom: 0;
+      text-align: center;
+      background-color: $color-grey-1;
+    }
   }
 
   .header-nav__menu-list-item {
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
 
   .header-nav__menu-list-item-a {
     text-decoration: none;
+    color: $color-blue-txt;
+
+    &:hover, &:focus {
+      color: $color-black;
+    }
   }
 
   @include bp($bp-tablet-l) {
@@ -46,7 +51,6 @@ Global Styles
       display: inline;
       padding-right: 1rem;
     }
-
   }
 }
 

@@ -10,12 +10,10 @@ publish: false
      data-css="c-header-nav">
     <nav class="header-nav__menu">
         <h2 class="header-nav__menu-header-info">{{content.header.info}}</h2>
-        <ul class="header-nav__menu-list" id="header-nav__menu-list">
-            {{#with @root.header-nav-bp.variations.default}}
+        <ul class="header-nav__menu-list" data-js-item="header-nav-list">
                 {{#each content.items}}
                     {{> c-header-nav-partials }}
                 {{/each}}
-            {{/with}}
         </ul>
     </nav>
 </div>

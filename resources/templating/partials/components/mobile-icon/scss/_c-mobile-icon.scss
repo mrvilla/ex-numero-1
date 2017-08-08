@@ -13,27 +13,68 @@ Global Styles
   .mobile-icon__button {
     background-color: transparent;
     border: 0;
+    height: 22px;
+    width: 26px;
+    padding: 0;
 
     &:hover, &:focus {
       background-color: transparent;
       outline: none;
-      -webkit-box-shadow: $color-white;
-      -moz-box-shadow: $color-white;
       border-color: $color-white;
     }
 
+    &.is-open {
+      .mobile-icon__button-line {
+        position: relative;
+        background-color: $color-black;
+        height: 2px;
 
+        &:nth-child(1) {
+          top: 2px;
+          transform: rotate(-46deg);
+          border-radius: 0;
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+          left: -20px;
+          border-radius: 0;
+        }
+
+        &:nth-child(3) {
+          top: -2px;
+          transform: rotate(46deg);
+          border-radius: 0;
+        }
+      }
+    }
   }
 
   .mobile-icon__button-line {
     display: block;
-    background-color: $color-black;
+    position: relative;
     width: 25px;
-    height: 2px;
-    margin-top: 5px;
+    height: 3px;
+    transition: 0.28s cubic-bezier(0.65,0.05,0.36,1);
 
-    &:first-child {
-      margin-top: 2px;
+    &:nth-child(1) {
+      top: -6px;
+      background-color: #DB6E00;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+
+    &:nth-child(2) {
+      left: 0;
+      background-color: #8A7051;
+      border-radius: 30%;
+    }
+
+    &:nth-child(3) {
+      top: 6px;
+      background-color: #DB6E00;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
     }
   }
 
