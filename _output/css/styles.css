@@ -212,7 +212,8 @@ Global Styles
       height: 20px; }
   [data-css="c-logo"] .logo__name {
     display: inline;
-    padding-left: 5px; }
+    padding-left: 0.5rem;
+    font-size: 110%; }
 
 /* ---------------------------------------------------
 Context: Default
@@ -271,7 +272,8 @@ Global Styles
 [data-css="c-mobile-icon"] {
   float: right;
   overflow: hidden;
-  padding: 0; }
+  padding: 0;
+  height: 22px; }
   [data-css="c-mobile-icon"] .mobile-icon__button {
     background-color: transparent;
     border: 0;
@@ -305,7 +307,7 @@ Global Styles
     height: 3px;
     transition: 0.28s cubic-bezier(0.65, 0.05, 0.36, 1); }
     [data-css="c-mobile-icon"] .mobile-icon__button-line:nth-child(1) {
-      top: -6px;
+      top: -5px;
       background-color: #DB6E00;
       border-top-right-radius: 20px;
       border-top-left-radius: 20px; }
@@ -314,7 +316,7 @@ Global Styles
       background-color: #8A7051;
       border-radius: 30%; }
     [data-css="c-mobile-icon"] .mobile-icon__button-line:nth-child(3) {
-      top: 6px;
+      top: 5px;
       background-color: #DB6E00;
       border-bottom-right-radius: 20px;
       border-bottom-left-radius: 20px; }

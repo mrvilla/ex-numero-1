@@ -9,6 +9,7 @@ Global Styles
   float: right;
   overflow: hidden;
   padding: 0;
+  height: 22px;
 
   .mobile-icon__button {
     background-color: transparent;
@@ -58,7 +59,7 @@ Global Styles
     transition: 0.28s cubic-bezier(0.65,0.05,0.36,1);
 
     &:nth-child(1) {
-      top: -6px;
+      top: -5px;
       background-color: #DB6E00;
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
@@ -71,7 +72,7 @@ Global Styles
     }
 
     &:nth-child(3) {
-      top: 6px;
+      top: 5px;
       background-color: #DB6E00;
       border-bottom-right-radius: 20px;
       border-bottom-left-radius: 20px;

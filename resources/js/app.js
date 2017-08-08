@@ -45,12 +45,12 @@ Veams.onInitialize(() => {
 
     const mobileButtonSel = "[data-js-item='mobile-button']"; // this is a string to select
     const $mobileButton = $(mobileButtonSel); // this is a Jquery element, hence the $ at the beginning
+    const headerMenuList = "[data-js-item='header-nav-list']";
+    const $menuList = $(headerMenuList);
     const openClass = "is-open";
 
     $mobileButton.on("click", (e, target) => {
     	const $target = $(target); // cache element that youll need later
-		const headerMenuList = "[data-js-item='header-nav-list']";
-        const $menuList = $(headerMenuList);
 
 		if ($target.hasClass(openClass)) {
             $target.removeClass(openClass);
