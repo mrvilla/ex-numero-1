@@ -6,27 +6,36 @@ component: logo
 Global Styles
 --------------------------------------------------- */
 [data-css="c-logo"] {
-  float: left;
   width: 60%;
   overflow: hidden;
+  flex: 1;
 
-  .logo__icon {
-    display: inline;
+  .logo__a {
+    display: flex;
+    text-decoration: none;
 
-    &::before {
-      content: '🌏';
-      animation: rotation 2s infinite linear;
-      display: inline-block;
-      position: relative;
-      width: 20px;
-      height: 20px;
+    .logo__a-icon {
+      &::before {
+        content: '🌏';
+        animation: rotation 2s infinite linear;
+        display: flex;
+        position: relative;
+        width: 20px;
+        height: 20px;
+      }
+      &:hover {
+        &::before {
+          animation-play-state: paused;
+        }
+      }
     }
-  }
 
-  .logo__name {
-    display: inline;
-    padding-left: 0.5rem;
-    font-size: 110%;
+    .logo__a-name {
+      padding-left: 0.5rem;
+      font-size: 110%;
+      line-height: 1.2;
+      color: $color-black;
+    }
   }
 
 }

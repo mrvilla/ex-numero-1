@@ -6,10 +6,10 @@ component: mobile-icon
 Global Styles
 --------------------------------------------------- */
 [data-css="c-mobile-icon"] {
-  float: right;
   overflow: hidden;
   padding: 0;
   height: 22px;
+  justify-content: flex-end;
 
   .mobile-icon__button {
     background-color: transparent;
@@ -84,9 +84,7 @@ Global Styles
   }
 
   @include bp($bp-tablet-l) {
-    .mobile-icon__button {
-      display: none;
-    }
+    display: none;
   }
 }
 

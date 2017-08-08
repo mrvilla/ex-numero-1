@@ -7,6 +7,7 @@ Global Styles
 --------------------------------------------------- */
 [data-css="c-header-nav"] {
   overflow: hidden;
+  flex: 1 0 100%;
 
   .header-nav__menu-header-info {
     @include hidden-structure-info();
@@ -16,12 +17,15 @@ Global Styles
     display: none;
 
     &.is-open {
-      display: block;
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: 75px;
-      bottom: 0;
+      //display: block;
+      //position: fixed;
+      //left: 0;
+      //right: 0;
+      //top: 75px;
+      //bottom: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
       text-align: center;
       background-color: $color-grey-1;
     }
@@ -41,6 +45,9 @@ Global Styles
   }
 
   @include bp($bp-tablet-l) {
+    justify-content: flex-end;
+    flex: 1;
+
     .header-nav__menu-list {
       display: block;
       float: right;

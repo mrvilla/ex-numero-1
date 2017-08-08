@@ -180,7 +180,10 @@ Global Styles
 [data-css="c-header"] {
   background-color: #F5F5F5;
   padding: 2.5rem;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
   @media only screen and (min-width: 1024px) {
     [data-css="c-header"] {
       background: #EEEEEE; } }
@@ -198,22 +201,26 @@ component: logo
 Global Styles
 --------------------------------------------------- */
 [data-css="c-logo"] {
-  float: left;
   width: 60%;
-  overflow: hidden; }
-  [data-css="c-logo"] .logo__icon {
-    display: inline; }
-    [data-css="c-logo"] .logo__icon::before {
+  overflow: hidden;
+  flex: 1; }
+  [data-css="c-logo"] .logo__a {
+    display: flex;
+    text-decoration: none; }
+    [data-css="c-logo"] .logo__a .logo__a-icon::before {
       content: '🌏';
       animation: rotation 2s infinite linear;
-      display: inline-block;
+      display: flex;
       position: relative;
       width: 20px;
       height: 20px; }
-  [data-css="c-logo"] .logo__name {
-    display: inline;
-    padding-left: 0.5rem;
-    font-size: 110%; }
+    [data-css="c-logo"] .logo__a .logo__a-icon:hover::before {
+      animation-play-state: paused; }
+    [data-css="c-logo"] .logo__a .logo__a-name {
+      padding-left: 0.5rem;
+      font-size: 110%;
+      line-height: 1.2;
+      color: #000; }
 
 /* ---------------------------------------------------
 Context: Default
@@ -225,7 +232,8 @@ component: header-nav
 Global Styles
 --------------------------------------------------- */
 [data-css="c-header-nav"] {
-  overflow: hidden; }
+  overflow: hidden;
+  flex: 1 0 100%; }
   [data-css="c-header-nav"] .header-nav__menu-header-info {
     display: block;
     position: absolute;
@@ -236,12 +244,9 @@ Global Styles
   [data-css="c-header-nav"] .header-nav__menu-list {
     display: none; }
     [data-css="c-header-nav"] .header-nav__menu-list.is-open {
-      display: block;
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: 75px;
-      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
       text-align: center;
       background-color: #F5F5F5; }
   [data-css="c-header-nav"] .header-nav__menu-list-item {
@@ -252,13 +257,16 @@ Global Styles
     [data-css="c-header-nav"] .header-nav__menu-list-item-a:hover, [data-css="c-header-nav"] .header-nav__menu-list-item-a:focus {
       color: #000; }
   @media only screen and (min-width: 1024px) {
-    [data-css="c-header-nav"] .header-nav__menu-list {
-      display: block;
-      float: right;
-      overflow: hidden; }
-    [data-css="c-header-nav"] .header-nav__menu-list-item {
-      display: inline;
-      padding-right: 1rem; } }
+    [data-css="c-header-nav"] {
+      justify-content: flex-end;
+      flex: 1; }
+      [data-css="c-header-nav"] .header-nav__menu-list {
+        display: block;
+        float: right;
+        overflow: hidden; }
+      [data-css="c-header-nav"] .header-nav__menu-list-item {
+        display: inline;
+        padding-right: 1rem; } }
 
 /* ---------------------------------------------------
 Context: Default
@@ -270,10 +278,10 @@ component: mobile-icon
 Global Styles
 --------------------------------------------------- */
 [data-css="c-mobile-icon"] {
-  float: right;
   overflow: hidden;
   padding: 0;
-  height: 22px; }
+  height: 22px;
+  justify-content: flex-end; }
   [data-css="c-mobile-icon"] .mobile-icon__button {
     background-color: transparent;
     border: 0;
@@ -328,7 +336,7 @@ Global Styles
     height: 1px;
     overflow: hidden; }
   @media only screen and (min-width: 1024px) {
-    [data-css="c-mobile-icon"] .mobile-icon__button {
+    [data-css="c-mobile-icon"] {
       display: none; } }
 
 /* ---------------------------------------------------
