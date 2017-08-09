@@ -342,6 +342,63 @@ Global Styles
 /* ---------------------------------------------------
 Context: Default
 --------------------------------------------------- */
+/* ===================================================
+component: footer
+=================================================== */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-footer"] {
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: row;
+  padding: 2.5rem;
+  height: 7rem;
+  box-shadow: 0 -0.2rem 0.75rem #BDBDBD;
+  bottom: 0; }
+  @media only screen and (min-width: 1024px) {
+    [data-css="c-footer"] {
+      background: #EEEEEE; } }
+  @media only screen and (min-width: 1440px) {
+    [data-css="c-footer"] {
+      background: #E0E0E0; } }
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+/* ===================================================
+component: creator
+=================================================== */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-creator"] {
+  flex: 1;
+  text-align: center; }
+  [data-css="c-creator"] .creator__link {
+    text-decoration: none;
+    color: #1390D8;
+    text-align: center;
+    position: absolute;
+    top: 3.8rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 6%; }
+    [data-css="c-creator"] .creator__link:hover, [data-css="c-creator"] .creator__link:focus {
+      color: #000; }
+    [data-css="c-creator"] .creator__link .creator__link-icon::before {
+      content: '👨🏽‍💻';
+      font-size: 180%;
+      display: flex;
+      position: relative;
+      width: 30px;
+      height: 40px;
+      margin: auto; }
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
 @media print {
   * {
     background: transparent !important;

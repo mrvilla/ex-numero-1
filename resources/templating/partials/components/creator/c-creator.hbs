@@ -1,0 +1,15 @@
+---
+type: component
+contextData: "creator-bp"
+layout: "lyt-docs"
+publish: false
+---
+
+
+<div class="c-creator{{#if settings.creatorContextClass}}--{{settings.creatorContextClass}}{{else}}--default{{/if}}{{#if settings.creatorClasses}} {{settings.creatorClasses}}{{/if}}"
+     data-css="c-creator">
+    <a href="{{content.creator.url}}" class="creator__link">
+        <div class="creator__link-icon"></div>
+        <div class="creator__link-icon-name">{{content.creator.name}}</div>
+    </a>
+</div>

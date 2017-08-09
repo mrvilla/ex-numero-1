@@ -1,0 +1,19 @@
+{
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Default"
+			},
+			"settings": {
+				"creatorContextClass": "default",
+				"creatorClasses": false
+			},
+			"content": {
+				"creator": {
+					"name": "iammrvilla",
+					"url": "https://iammrvilla.com"
+				}
+			}
+		}
+	}
+}

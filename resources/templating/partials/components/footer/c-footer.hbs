@@ -1,0 +1,14 @@
+---
+type: component
+contextData: "footer-bp"
+layout: "lyt-docs"
+publish: false
+---
+
+
+<div class="c-footer{{#if settings.footerContextClass}}--{{settings.footerContextClass}}{{else}}--default{{/if}}{{#if settings.footerClasses}} {{settings.footerClasses}}{{/if}}"
+     data-css="c-footer">
+    {{#with @root.creator-bp.variations.default}}
+        {{> c-creator}}
+    {{/with}}
+</div>
