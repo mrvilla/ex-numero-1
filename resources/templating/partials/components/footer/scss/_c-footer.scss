@@ -6,21 +6,13 @@ component: footer
 Global Styles
 --------------------------------------------------- */
 [data-css="c-footer"] {
-  background-color: $color-grey-1;
+  background-color: $color-white;
   display: flex;
   flex-direction: row;
   padding: 2.5rem;
   height: 7rem;
-  box-shadow: 0 -0.2rem 0.75rem $color-grey-4;
+  box-shadow: 0 -0.2rem 2rem $color-blue-lighten;
   bottom: 0;
-
-  @include bp($bp-tablet-l) {
-    background: $color-grey-2;
-  }
-
-  @include bp($bp-desktop-l) {
-    background: $color-grey-3;
-  }
 }
 
 /* ---------------------------------------------------

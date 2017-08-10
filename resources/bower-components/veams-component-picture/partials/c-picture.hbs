@@ -1,0 +1,24 @@
+---
+type: component
+layout: lyt-docs
+contextData: "picture-bp"
+---
+
+<picture class="c-picture{{#if settings.pictureContextClass}}--{{settings.pictureContextClass}}{{else}}--default{{/if}}
+	{{#if settings.pictureClasses}} {{settings.pictureClasses}}{{/if}}{{#if settings.lazyload}} lazyload{{/if}}" data-css="c-picture">
+
+	<!--[if IE 9]><audio><![endif]-->
+	{{#each content.items}}
+	<source {{#if ../settings.lazyload}}data-{{/if}}srcset="{{#each srcset}}{{#unless @first}}, {{/unless}}{{getUrl src}}{{#if imageWidth}} {{imageWidth}}{{/if}}{{/each}}"
+	        {{#if sizes}} sizes="{{#each sizes}}{{#unless @first}}, {{/unless}}{{screenWidth}} {{imageWidth}}{{/each}}"{{/if}}
+		{{#if media}} media="{{media}}"{{/if}}
+		{{#if type}} type="{{type}}"{{/if}} />
+	{{/each}}
+	<!--[if IE 9]></audio><![endif]-->
+
+	{{#if content.fallbackSrc}}
+		<img class="picture__image{{#if settings.lazyload}} lazyload{{/if}}" src="{{getUrl content.fallbackSrc}}" alt="{{content.alt}}"/>
+	{{else}}
+		<h3 style="color: red; font-weight: bold;">Define a fallback picture!</h3>
+	{{/if}}
+</picture>

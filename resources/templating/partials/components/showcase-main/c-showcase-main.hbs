@@ -1,0 +1,15 @@
+---
+type: component
+contextData: "showcase-main-bp"
+layout: "lyt-docs"
+publish: false
+---
+
+
+<div class="c-showcase-main{{#if settings.showcaseMainContextClass}}--{{settings.showcaseMainContextClass}}{{else}}--default{{/if}}{{#if settings.showcaseMainClasses}} {{settings.showcaseMainClasses}}{{/if}}"
+     data-css="c-showcase-main">
+    {{#with content.showcase.picture}}
+        {{> c-picture}}
+    {{/with}}
+    <div class="showcase-main__title">{{content.title.text}}</div>
+</div>

@@ -1,0 +1,66 @@
+{
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Default"
+			},
+			"settings": {
+				"showcaseMainContextClass": "default",
+				"showcaseMainClasses": true
+			},
+			"content": {
+				"showcase": {
+					"picture": {
+						"settings": {
+							"pictureContextClass": "showcase",
+							"lazyload": true,
+							"autoSizes": true
+						},
+						"content": {
+							"fallbackSrc": "http://placehold.it/20x20",
+							"alt": "Alternative text that describes the image",
+							"blabla": "hallo",
+							"items": [
+								{
+									"media": "(max-width: 768px)",
+									"srcset": [
+										{
+											"src": "http://placehold.it/768x1200"
+										}
+									]
+								},
+								{
+									"media": "(max-width: 1100px)",
+									"srcset": [
+										{
+											"src": "http://placehold.it/1100x1300"
+										}
+									]
+								},
+								{
+									"media": "(max-width: 1440px)",
+									"srcset": [
+										{
+											"src": "http://placehold.it/1440x900"
+										}
+									]
+								},
+								{
+									"media": "(min-width: 1400px)",
+									"srcset": [
+										{
+											"src": "http://placehold.it/1920x1000"
+										}
+									]
+								}
+							]
+						}
+					}
+				},
+				"title": {
+					"text": "Showcase Title"
+				}
+			}
+		}
+	}
+}

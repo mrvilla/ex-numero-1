@@ -1,21 +1,30 @@
 /* ===================================================
-component: header
+COMPONENT: PICTURE
 =================================================== */
 
 /* ---------------------------------------------------
 Global Styles
 --------------------------------------------------- */
-[data-css="c-header"] {
-  background-color: $color-white;
-  padding: 2.5rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+[data-css="c-picture"] {
+
+	.picture__image {
+		max-width: 100%;
+		overflow: hidden;
+		transition: filter 300ms ease;
+
+		&.lazyload {
+			width: 100%;
+			filter: blur(10px);
+		}
+
+		&.lazyloaded {
+			filter: blur(0);
+		}
+	}
 }
 
 /* ---------------------------------------------------
 Context: Default
 --------------------------------------------------- */
-.c-header--default {
+.c-picture--default {
 }

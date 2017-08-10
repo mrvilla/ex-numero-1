@@ -1,0 +1,30 @@
+{
+  "name": "veams-component-picture",
+  "version": "3.0.0",
+  "ignore": [
+    ".bowerrc",
+    ".gitignore",
+    "bower.json"
+  ],
+  "authors": [
+    {
+      "name": "Sebastian Fitzner",
+      "email": "sebastian@veams.org"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Veams/veams-component-picture.git"
+  },
+  "homepage": "https://github.com/Veams/veams-component-picture",
+  "_release": "3.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.0.0",
+    "commit": "0647ee103a1508cc58c1d091da85085a00172475"
+  },
+  "_source": "https://github.com/Veams/veams-component-picture.git",
+  "_target": "^3.0.0",
+  "_originalSource": "veams-component-picture",
+  "_direct": true
+}

@@ -1,0 +1,48 @@
+/* ===================================================
+component: showcase-main
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-showcase-main"] {
+  background: $color-blue-lighten;
+  background-image: linear-gradient($color-white 0.1rem, transparent 0),
+                    linear-gradient(90deg, $color-white 0.1rem, transparent 0),
+                    linear-gradient($color-white-lighten .08rem, transparent 0),
+                    linear-gradient(90deg, $color-white-lighten .08rem, transparent 0);
+  background-size: 5rem 5rem, 5rem 5rem, 1rem 1rem, 1rem 1rem;
+  padding: 2rem;
+
+  .showcase-main__title {
+    font-size: 100%;
+    background-color: $color-white;
+    padding: 6rem 0;
+    position: absolute;
+    text-align: center;
+    width: 40%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  @include bp($bp-tablet-l) {
+
+    .showcase-main__title {
+      font-size: 200%;
+    }
+  }
+
+  @include bp($bp-desktop-l) {
+
+    .showcase-main__title {
+      font-size: 300%;
+    }
+  }
+}
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-showcase-main--default {
+}

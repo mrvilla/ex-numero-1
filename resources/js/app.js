@@ -7,6 +7,7 @@ import VeamsVent from 'veams/src/js/plugins/vent';
 import VeamsModules from 'veams/src/js/plugins/modules';
 import VeamsMediaQueryHandler from 'veams/src/js/plugins/media-query-handler';
 import EVENTS from './events';
+import 'lazysizes';
 
 
 let App = {};
