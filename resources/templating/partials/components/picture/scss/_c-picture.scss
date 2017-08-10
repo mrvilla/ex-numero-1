@@ -18,7 +18,7 @@ Global Styles
 		}
 
 		&.lazyloaded {
-			filter: blur(0);
+			filter: blur(0) opacity(0.4);
 		}
 	}
 }

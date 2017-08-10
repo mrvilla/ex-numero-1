@@ -10,7 +10,8 @@
 			},
 			"content": {
 				"logo": {
-					"name": "Logo name"
+					"name": "Logo name",
+					"href": "/index"
 				}
 			}
 		}

@@ -11,7 +11,7 @@ publish: false
     <nav class="header-nav__menu">
         <h2 class="header-nav__menu-header-info">{{content.header.info}}</h2>
         <ul class="header-nav__menu-list" data-js-item="header-nav-list">
-                {{#each content.items}}
+                {{#each content.navPartials}}
                     {{> c-header-nav-partials }}
                 {{/each}}
         </ul>

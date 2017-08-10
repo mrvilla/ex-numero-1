@@ -9,15 +9,24 @@
 				"headerNavClasses": false
 			},
 			"content": {
-				"items": [
+				"navPartials": [
 					{
-						"title": "1link"
+						"content": {
+							"title": "1link",
+							"href": "/1link"
+						}
 					},
 					{
-						"title": "2link"
+						"content": {
+							"title": "2link",
+							"href": "/2link"
+						}
 					},
 					{
-						"title": "3link"
+						"content": {
+							"title": "3link",
+							"href": "/3link"
+						}
 					}
 				],
 				"header": {

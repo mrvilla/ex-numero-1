@@ -8,7 +8,7 @@ publish: false
 
 <div class="c-logo{{#if settings.logoContextClass}}--{{settings.logoContextClass}}{{else}}--default{{/if}}{{#if settings.logoClasses}} {{settings.logoClasses}}{{/if}}"
      data-css="c-logo">
-    <a href="#" class="logo__a">
+    <a href="{{content.logo.href}}" class="logo__a">
         <div class="logo__a-icon"></div>
         <div class="logo__a-name">{{content.logo.name}}</div>
     </a>

@@ -439,7 +439,7 @@ Global Styles
     width: 100%;
     filter: blur(10px); }
   [data-css="c-picture"] .picture__image.lazyloaded {
-    filter: blur(0); }
+    filter: blur(0) opacity(0.4); }
 
 /* ---------------------------------------------------
 Context: Default
